@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85c2c5c0-2621-4e4a-9231-51a4fd7a4d44" name="Default" comment="" />
+    <list default="true" id="85c2c5c0-2621-4e4a-9231-51a4fd7a4d44" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/bad.tbl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/big.tbl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/db/ArrayDeque.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/db/BinaryExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/db/Column.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/db/ColumnExpression.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/db/Conditional.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/db/Database.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/db/NaN.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/db/NoValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/db/Parser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/db/SpecialValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/db/Table.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/proj2/laburrita.tbl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/examples/teams.tbl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/examples/teams.tbl" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +51,9 @@
       <find>no table</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
@@ -41,6 +61,7 @@
     <option name="height" value="1050" />
   </component>
   <component name="ProjectId" id="1aVRsu4eRW9yDApfxDRG8mBm6zM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />

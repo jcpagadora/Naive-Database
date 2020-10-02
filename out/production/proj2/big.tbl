@@ -1,0 +1,49 @@
+item string,price float,TeamName string,Season int,Wins int,Losses int,Ties int
+'carne asada burrito',6.190,'Golden Bears',2016,5,7,0
+'carne asada burrito',6.190,'Golden Bears',2015,8,5,0
+'carne asada burrito',6.190,'Golden Bears',2014,5,7,0
+'carne asada burrito',6.190,'Steelers',2015,10,6,0
+'carne asada burrito',6.190,'Steelers',2014,11,5,0
+'carne asada burrito',6.190,'Steelers',2013,8,8,0
+'carne asada burrito',6.190,'Mets',2015,90,72,0
+'carne asada burrito',6.190,'Mets',2014,79,83,0
+'carne asada burrito',6.190,'Mets',2013,74,88,0
+'carne asada burrito',6.190,'Patriots',2015,12,4,0
+'carne asada burrito',6.190,'Patriots',2014,12,4,0
+'carne asada burrito',6.190,'Patriots',2013,12,4,0
+'chicken burrito',6.790,'Golden Bears',2016,5,7,0
+'chicken burrito',6.790,'Golden Bears',2015,8,5,0
+'chicken burrito',6.790,'Golden Bears',2014,5,7,0
+'chicken burrito',6.790,'Steelers',2015,10,6,0
+'chicken burrito',6.790,'Steelers',2014,11,5,0
+'chicken burrito',6.790,'Steelers',2013,8,8,0
+'chicken burrito',6.790,'Mets',2015,90,72,0
+'chicken burrito',6.790,'Mets',2014,79,83,0
+'chicken burrito',6.790,'Mets',2013,74,88,0
+'chicken burrito',6.790,'Patriots',2015,12,4,0
+'chicken burrito',6.790,'Patriots',2014,12,4,0
+'chicken burrito',6.790,'Patriots',2013,12,4,0
+'salsa',0.000,'Golden Bears',2016,5,7,0
+'salsa',0.000,'Golden Bears',2015,8,5,0
+'salsa',0.000,'Golden Bears',2014,5,7,0
+'salsa',0.000,'Steelers',2015,10,6,0
+'salsa',0.000,'Steelers',2014,11,5,0
+'salsa',0.000,'Steelers',2013,8,8,0
+'salsa',0.000,'Mets',2015,90,72,0
+'salsa',0.000,'Mets',2014,79,83,0
+'salsa',0.000,'Mets',2013,74,88,0
+'salsa',0.000,'Patriots',2015,12,4,0
+'salsa',0.000,'Patriots',2014,12,4,0
+'salsa',0.000,'Patriots',2013,12,4,0
+'bigly burrito',4.709,'Golden Bears',2016,5,7,0
+'bigly burrito',4.709,'Golden Bears',2015,8,5,0
+'bigly burrito',4.709,'Golden Bears',2014,5,7,0
+'bigly burrito',4.709,'Steelers',2015,10,6,0
+'bigly burrito',4.709,'Steelers',2014,11,5,0
+'bigly burrito',4.709,'Steelers',2013,8,8,0
+'bigly burrito',4.709,'Mets',2015,90,72,0
+'bigly burrito',4.709,'Mets',2014,79,83,0
+'bigly burrito',4.709,'Mets',2013,74,88,0
+'bigly burrito',4.709,'Patriots',2015,12,4,0
+'bigly burrito',4.709,'Patriots',2014,12,4,0
+'bigly burrito',4.709,'Patriots',2013,12,4,0
