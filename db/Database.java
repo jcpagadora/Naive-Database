@@ -95,6 +95,9 @@ public class Database {
                 case "drop":
                     return dropTable(tableName);
 
+                case "tables":
+                    return printSchemas();
+
                 default:
                     return "ERROR: Malformed command";
 
@@ -151,6 +154,8 @@ public class Database {
         String columnExpressionsString = stringArgs.get(2).trim();
         String[] colExpressionsArr = columnExpressionsString.split(",");
 
+        //If there is an aggregation function, evaluate it.
+
         //If specific columns are selected, applies the column expressions to the table and
         // stores the resulting table; otherwise select all
         if (colExpressionsArr.length > 1 || !colExpressionsArr[0].equals("*")) {
@@ -158,6 +163,7 @@ public class Database {
         } else {
             selectedTable = selectedTable.copy();
         }
+
 
         //Gets the conditional expressions, separates by " and "
         String conditionalExprsString = stringArgs.get(4);
@@ -273,4 +279,17 @@ public class Database {
         }
         return "ERROR: No table " + tableName + " in database";
     }
+
+    /* Prints all table schemas in the database */
+    private String printSchemas() {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String tableName : tables.keySet()) {
+            Table table = tables.get(tableName);
+            stringBuilder.append(tableName + ": ");
+            stringBuilder.append(table.schema());
+            stringBuilder.append("\n");
+        }
+        return stringBuilder.toString();
+    }
+
 }

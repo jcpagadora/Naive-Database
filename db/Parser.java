@@ -22,7 +22,8 @@ public class Parser {
             DROP_CMD   = Pattern.compile("drop table " + REST),
             INSERT_CMD = Pattern.compile("insert into " + REST),
             PRINT_CMD  = Pattern.compile("print " + REST),
-            SELECT_CMD = Pattern.compile("select " + REST);
+            SELECT_CMD = Pattern.compile("select " + REST),
+            TABLES_CMD = Pattern.compile("tables");
 
     // Stage 2 syntax, contains the clauses of commands.
     private static final Pattern CREATE_NEW  = Pattern.compile("(\\S+)\\s+\\((\\S+\\s+\\S+\\s*" +
@@ -63,7 +64,13 @@ public class Parser {
             return printTable(m.group(1));
         } else if ((m = SELECT_CMD.matcher(query)).matches()) {
             return select(m.group(1));
-        } else {
+        } else if (TABLES_CMD.matcher(query).matches()) {
+            List<String> tables = new LinkedList<>();
+            tables.add("tables");
+            tables.add("dummy");
+            return tables;
+        }
+        else {
             System.err.printf("Malformed query: %s\n", query);
         }
         return null;
@@ -83,6 +90,10 @@ public class Parser {
             //Group 2 is an array of strings of the columns
             String[] cols = m.group(2).split(COMMA);
             for (String col : cols) {
+                if (col.matches("^.*[^a-zA-Z0-9 ].*$")) {
+                    System.err.printf("Invalid column name: %s\n", col);
+                    throw new RuntimeException();
+                }
                 stringArgs.add(col);
             }
             return stringArgs;
@@ -168,10 +179,13 @@ public class Parser {
         List<String> stringArgs = new LinkedList<>();
         stringArgs.add("select");
         stringArgs.add("None");
+
         //Group 1 is the string of column expressions
         stringArgs.add(m.group(1));
+
         //Group 2 is the string of table name/s to get from
         stringArgs.add(m.group(2));
+
         //Group 3 is the string of conditional expressions
         stringArgs.add(m.group(3));
 

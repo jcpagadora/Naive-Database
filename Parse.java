@@ -16,7 +16,9 @@ public class Parse {
                                  DROP_CMD   = Pattern.compile("drop table " + REST),
                                  INSERT_CMD = Pattern.compile("insert into " + REST),
                                  PRINT_CMD  = Pattern.compile("print " + REST),
-                                 SELECT_CMD = Pattern.compile("select " + REST);
+                                 SELECT_CMD = Pattern.compile("select " + REST),
+                                 TABLES_CMD = Pattern.compile("tables"),
+                                 UPDATE_CMD = Pattern.compile("update ..." + REST); //TODO
 
     // Stage 2 syntax, contains the clauses of commands.
     private static final Pattern CREATE_NEW  = Pattern.compile("(\\S+)\\s+\\(\\s*(\\S+\\s+\\S+\\s*" +
@@ -55,7 +57,10 @@ public class Parse {
              printTable(m.group(1));
         } else if ((m = SELECT_CMD.matcher(query)).matches()) {
              select(m.group(1));
-        } else {
+        } else if ((m = TABLES_CMD.matcher(query)).matches()) {
+            tables();
+        }
+        else {
             System.err.printf("Malformed query: %s\n", query);
         }
     }
@@ -126,4 +131,10 @@ public class Parse {
         System.out.printf("You are trying to select these expressions:" +
                 " '%s' from the join of these tables: '%s', filtered by these conditions: '%s'\n", exprs, tables, conds);
     }
+
+    private static void tables() {
+        System.out.printf("You are trying to print out table schemas in this database.");
+    }
+
+
 }

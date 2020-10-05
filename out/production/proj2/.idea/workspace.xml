@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85c2c5c0-2621-4e4a-9231-51a4fd7a4d44" name="Default" comment="" />
+    <list default="true" id="85c2c5c0-2621-4e4a-9231-51a4fd7a4d44" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/db/Aggregation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parse.java" beforeDir="false" afterPath="$PROJECT_DIR$/Parse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/ArrayDeque.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/ArrayDeque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/BinaryExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/BinaryExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/Column.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/Column.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/NaN.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/NaN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/SpecialValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/SpecialValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/db/Table.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/db/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/bad.tbl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/big.tbl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/db/ArrayDeque.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/db/ArrayDeque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/db/BinaryExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/db/BinaryExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/db/Column.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/db/Column.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/db/ColumnExpression.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/db/ColumnExpression.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/db/Conditional.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/db/Conditional.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/db/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/db/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/db/NaN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/db/NaN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/db/NoValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/db/NoValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/db/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/db/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/db/SpecialValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/db/SpecialValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/db/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/db/Table.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/examples/teams.tbl" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/proj2/examples/teams.tbl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/proj2/laburrita.tbl" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,24 +56,11 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>throws</find>
-      <find>tostring</find>
-      <find>System.out.println(&quot;hi&quot;);</find>
-      <find>System</find>
-      <find>System.out.println(&quot;hi&quot;)</find>
-      <find>add</find>
-      <find>no table</find>
-    </findStrings>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1050" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aVRsu4eRW9yDApfxDRG8mBm6zM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -230,10 +250,61 @@
     </todo-panel>
   </component>
   <component name="WindowStateProjectService">
-    <state x="733" y="431" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1586819043825">
-      <screen x="0" y="23" width="1792" height="1028" />
+    <state x="643" y="251" key="#com.intellij.ide.util.MemberChooser" timestamp="1601938661574">
+      <screen x="0" y="23" width="1792" height="1023" />
     </state>
-    <state x="733" y="431" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1792.1028@0.23.1792.1028" timestamp="1586819043825" />
+    <state x="643" y="251" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1023@0.23.1792.1023" timestamp="1601938661574" />
+    <state width="1487" height="546" key="GridCell.Tab.0.bottom" timestamp="1601923806553">
+      <screen x="0" y="23" width="1792" height="1023" />
+    </state>
+    <state width="1487" height="546" key="GridCell.Tab.0.bottom/0.23.1792.1023@0.23.1792.1023" timestamp="1601923806553" />
+    <state width="1487" height="546" key="GridCell.Tab.0.center" timestamp="1601923806552">
+      <screen x="0" y="23" width="1792" height="1023" />
+    </state>
+    <state width="1487" height="546" key="GridCell.Tab.0.center/0.23.1792.1023@0.23.1792.1023" timestamp="1601923806552" />
+    <state width="1487" height="546" key="GridCell.Tab.0.left" timestamp="1601923806552">
+      <screen x="0" y="23" width="1792" height="1023" />
+    </state>
+    <state width="1487" height="546" key="GridCell.Tab.0.left/0.23.1792.1023@0.23.1792.1023" timestamp="1601923806552" />
+    <state width="1487" height="546" key="GridCell.Tab.0.right" timestamp="1601923806553">
+      <screen x="0" y="23" width="1792" height="1023" />
+    </state>
+    <state width="1487" height="546" key="GridCell.Tab.0.right/0.23.1792.1023@0.23.1792.1023" timestamp="1601923806553" />
+    <state width="1487" height="546" key="GridCell.Tab.1.bottom" timestamp="1601923806553">
+      <screen x="0" y="23" width="1792" height="1023" />
+    </state>
+    <state width="1487" height="546" key="GridCell.Tab.1.bottom/0.23.1792.1023@0.23.1792.1023" timestamp="1601923806553" />
+    <state width="1487" height="546" key="GridCell.Tab.1.center" timestamp="1601923806553">
+      <screen x="0" y="23" width="1792" height="1023" />
+    </state>
+    <state width="1487" height="546" key="GridCell.Tab.1.center/0.23.1792.1023@0.23.1792.1023" timestamp="1601923806553" />
+    <state width="1487" height="546" key="GridCell.Tab.1.left" timestamp="1601923806553">
+      <screen x="0" y="23" width="1792" height="1023" />
+    </state>
+    <state width="1487" height="546" key="GridCell.Tab.1.left/0.23.1792.1023@0.23.1792.1023" timestamp="1601923806553" />
+    <state width="1487" height="546" key="GridCell.Tab.1.right" timestamp="1601923806553">
+      <screen x="0" y="23" width="1792" height="1023" />
+    </state>
+    <state width="1487" height="546" key="GridCell.Tab.1.right/0.23.1792.1023@0.23.1792.1023" timestamp="1601923806553" />
+    <state x="561" y="367" key="com.intellij.ide.util.TipDialog" timestamp="1601919966718">
+      <screen x="0" y="23" width="1792" height="1023" />
+    </state>
+    <state x="561" y="367" key="com.intellij.ide.util.TipDialog/0.23.1792.1023@0.23.1792.1023" timestamp="1601919966718" />
+    <state x="207" y="157" key="new project wizard" timestamp="1601938874642">
+      <screen x="0" y="23" width="1792" height="1023" />
+    </state>
+    <state x="207" y="157" key="new project wizard/0.23.1792.1023@0.23.1792.1023" timestamp="1601938874642" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/db/Database.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

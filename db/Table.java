@@ -384,14 +384,14 @@ public class Table {
         throw new RuntimeException("No column " + name + " found.");
     }
 
-    /*Stores the table as a string using a string builder */
+    /* Stores the table as a string using a string builder */
     String print() {
 
             StringBuilder stringBuilder = new StringBuilder();
             //Prints the first row which is the list of column names and types
             for (int i = 0; i < table.size(); i++) {
                 if (i > 0) {
-                    stringBuilder.append(",");
+                    stringBuilder.append(", ");
                 }
                 Column column = table.get(i);
                 stringBuilder.append(column.columnName + " " + column.columnType);
@@ -419,4 +419,19 @@ public class Table {
             }
             return stringBuilder.toString();
     }
+
+    /* Prints the schema of the table using a string builder */
+    String schema() {
+        StringBuilder stringBuilder = new StringBuilder();
+        int flag = 1;
+        for (Column col : table) {
+            if (flag == 0) {
+                stringBuilder.append(", ");
+            }
+            flag = 0;
+            stringBuilder.append(col.columnName + " " + col.columnType);
+        }
+        return stringBuilder.toString();
+    }
+
 }
