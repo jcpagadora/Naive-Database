@@ -14,19 +14,60 @@ public class Aggregation {
 
     private Column column;
 
+    private String type;
+
+    /*
+      Constructor for an Aggregation object.
+     */
     Aggregation(String name, Column col) {
-        /*
-        Constructor for an Aggregation object.
-         */
         column = col;
+        type = col.columnType;
         for (String agg : validAggs) {
-            if (name == agg) {
+            if (name.equals(agg)) {
                 agg_name = name;
+                return;
             }
         }
+        System.out.printf("Unrecognized aggregation function: %s\n", name);
         throw new RuntimeException();
     }
 
-
+    /*
+    Performs the aggregation function.
+     */
+    float aggregate() {
+        // Many of the aggregation functions use the length of the column.
+        int n = column.size();
+        switch (agg_name) {
+            case "avg":
+                float sum = 0;
+                if (type.equals("int")) {
+                    for (int i = 0; i < n; i++) {
+                        sum += (int) column.get(i);
+                    }
+                } else {
+                    for (int i = 0; i < n; i++) {
+                        sum += (float) column.get(i);
+                    }
+                }
+                return sum / n;
+            case "sum":
+                float result = 0;
+                if (type.equals("int")) {
+                    for (int i = 0; i < n; i++) {
+                        result += (int) column.get(i);
+                    }
+                } else {
+                    for (int i = 0; i < n; i++) {
+                        result += (float) column.get(i);
+                    }
+                }
+                return result;
+            case "count":
+                return n;
+            default:
+                throw new RuntimeException();
+        }
+    }
 
 }

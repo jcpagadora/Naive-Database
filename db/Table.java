@@ -1,9 +1,6 @@
 package db;
 
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Set;
-import java.util.LinkedHashSet;
+import java.util.*;
 import java.lang.Object;
 
 /**
@@ -140,6 +137,25 @@ public class Table {
             }
         }
         return new Table(selectedCols);
+    }
+
+    /* Aggregates a column in the table, according to the given aggregation function.
+       An aggregation function takes in a numerical column, and aggregates all the numbers
+       into one summarizing number, e.g., average, sum, count.
+     */
+    Table aggregate(String agg_func, String col_name) {
+        Column col = getColumn(col_name);
+        if (col.columnType == "string") {
+            System.out.println("Columns of strings are invalid for aggregations.");
+            throw new RuntimeException();
+        }
+        Aggregation agg = new Aggregation(agg_func, col);
+        float result = agg.aggregate();
+        Column agg_col = new Column(agg_func + "(" + col_name + ")", "float");
+        agg_col.add(result);
+        List<Column> cols = new LinkedList<>();
+        cols.add(agg_col);
+        return new Table(cols);
     }
 
     /* Gets indices of rows where conditions are not satisfied */

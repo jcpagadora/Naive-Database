@@ -60,6 +60,7 @@ Inserts row data into the given table. The list of literals must match the numbe
 Typical SQL select statement. Projects onto the desired columns, and selects only the rows that satisfy the given conditions. Note that we allow column expressions that are at most binary arithmetic operations on columns. Where conditions only handle equality and comparisons, i.e. not BETWEEN. Furthermore, note that joins are implemented by only selecting from multiple tables, i.e. there is no JOIN command. By default, this join will simply perform an inner join, where the join condition must be handled in the following where clauses.
 
 `select <col_expr_1>,..., <col_expr_m> from <table_1>,..., <table_t> where <cond_1> and ... and <cond_c>`
+<<<<<<< HEAD
 
 
 Note that there are no semicolons in this syntax! To start a database, run
@@ -102,3 +103,5 @@ in the terminal. To exit, simply type
 
 
 
+=======
+>>>>>>> f9577d2b3b53a35456b8c5d1b91421971f987bce

@@ -154,9 +154,19 @@ public class Database {
         String columnExpressionsString = stringArgs.get(2).trim();
         String[] colExpressionsArr = columnExpressionsString.split(",");
 
-        //If there is an aggregation function, evaluate it.
+        // If there is an aggregation, evaluate it
+        if (colExpressionsArr[0].matches("[a-z]+\\([a-z]+\\)")) {
+            // Get aggregation info
+            String[] agg_expr = colExpressionsArr[0].split("\\(");
+            String agg_func = agg_expr[0];
+            String agg_colname = agg_expr[1].replace(")", "");
 
-        //If specific columns are selected, applies the column expressions to the table and
+            //First, filter out any rows
+            selectedTable = filter(stringArgs, selectedTable);
+            return selectedTable.aggregate(agg_func, agg_colname);
+        }
+
+        // If specific columns are selected, applies the column expressions to the table and
         // stores the resulting table; otherwise select all
         if (colExpressionsArr.length > 1 || !colExpressionsArr[0].equals("*")) {
             selectedTable = selectedTable.selectColumns(colExpressionsArr);
@@ -164,11 +174,15 @@ public class Database {
             selectedTable = selectedTable.copy();
         }
 
+        selectedTable = filter(stringArgs, selectedTable);
+        return selectedTable;
+    }
 
+    private Table filter(List<String> stringArgs, Table tb) {
         //Gets the conditional expressions, separates by " and "
         String conditionalExprsString = stringArgs.get(4);
         if (conditionalExprsString == null) {
-            return selectedTable;
+            return tb;
         }
         conditionalExprsString = conditionalExprsString.trim();
         String[] condExprs = conditionalExprsString.split("and");
@@ -179,9 +193,9 @@ public class Database {
             conditionals.add(new Conditional(cond));
         }
         //Tests conditions on selected table and gets indices of rows to remove
-        selectedTable.removeRowsConditions(conditionals);
+        tb.removeRowsConditions(conditionals);
 
-        return selectedTable;
+        return tb;
     }
 
 
