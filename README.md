@@ -2,6 +2,16 @@
 
 This is just a naive in-memory database that uses SQL-like syntax. This was code written by me in 2017.
 
+To start a database, run
+
+`java Main` 
+
+in the terminal. To exit, simply type
+
+`exit`.
+
+
+
 ## .tbl Files
 In this project, we use `.tbl` files to store tables in memory. These are basically `.csv` files but with the first row giving the column names and types.
 For example, `nums.tbl` with the following contents:
@@ -63,15 +73,7 @@ Typical SQL select statement. Projects onto the desired columns, and selects onl
 <<<<<<< HEAD
 
 
-Note that there are no semicolons in this syntax! To start a database, run
-
-`java Main` 
-
-in the terminal. To exit, simply type
-
-`exit`.
-
-
+Note that there are no semicolons in this syntax!
 
 
 

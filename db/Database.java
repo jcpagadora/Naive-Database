@@ -155,12 +155,11 @@ public class Database {
         String[] colExpressionsArr = columnExpressionsString.split(",");
 
         // If there is an aggregation, evaluate it
-        if (colExpressionsArr[0].matches("[a-z]+\\([a-z]+\\)")) {
+        if (colExpressionsArr[0].matches("[a-z]+\\((([a-z]+)|\\*)\\)")) {
             // Get aggregation info
             String[] agg_expr = colExpressionsArr[0].split("\\(");
             String agg_func = agg_expr[0];
             String agg_colname = agg_expr[1].replace(")", "");
-
             //First, filter out any rows
             selectedTable = filter(stringArgs, selectedTable);
             return selectedTable.aggregate(agg_func, agg_colname);

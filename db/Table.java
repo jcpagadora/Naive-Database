@@ -144,8 +144,11 @@ public class Table {
        into one summarizing number, e.g., average, sum, count.
      */
     Table aggregate(String agg_func, String col_name) {
-        Column col = getColumn(col_name);
-        if (col.columnType == "string") {
+        Column col = table.get(0);
+        if (!(col_name.equals("*") & agg_func.equals("count"))) {
+            col = getColumn(col_name);
+        }
+        if (col.columnType.equals("string")) {
             System.out.println("Columns of strings are invalid for aggregations.");
             throw new RuntimeException();
         }
